@@ -228,7 +228,7 @@ button{
 
 /*  Media query for the larger screen  */
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 815px){
 
    
   body{
@@ -375,9 +375,12 @@ nav{
     
 }
 
+
+
 #skill-cards  .card-body{
     display: flex;
     flex-direction: column;
+    
     
     
 }
