@@ -228,7 +228,7 @@ button{
 
 /*  Media query for the larger screen  */
 
-@media only screen and (min-width: 815px){
+@media only screen and (min-width: 800px){
 
    
   body{
@@ -390,6 +390,10 @@ nav{
     
 }
 
+.certificate-img{
+    width: 100%;
+    object-fit: cover;
+}
 
 .card-header{
     display: flex;
@@ -410,7 +414,7 @@ nav{
 #skill-cards > .panel{
     
     min-height: 80vh;
-    max-height: 98vh;
+    max-height: 100vh;
     border-radius: 20px;
     
     cursor:pointer;
