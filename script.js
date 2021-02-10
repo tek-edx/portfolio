@@ -23,6 +23,7 @@ function scrollFunction() {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
      
         mybutton.style.display = "block";
+        mybutton.style.backgroundColor="#f59800"
         
         
     } else {
