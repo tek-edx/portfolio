@@ -205,6 +205,11 @@ nav ul {
     margin:0px;
 }
 
+.certificate-img{
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 #projects{
@@ -305,7 +310,6 @@ section{
 }
 
 
-
 #to-top{
 
   display: none;
@@ -327,6 +331,13 @@ section{
 
 #to-top:hover {
   background-color: #555;
+}
+
+
+.badge{
+    
+    width: 8em;
+    margin-left : 2em;
 }
 
 
@@ -356,7 +367,7 @@ section{
 
 /*  Media query for the larger screen  */
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 896px){
 
 
     #contact-me ,#skills,#projects{
@@ -460,6 +471,7 @@ section{
         color:whitesmoke;
         
     }
+
     #about-me > article{
     height: 50vh;
     padding: 0em 5em;
@@ -520,10 +532,7 @@ nav{
     
 }
 
-.certificate-img{
-    width: 100%;
-    object-fit: cover;
-}
+
 
 .card-header{
     display: flex;
@@ -617,14 +626,7 @@ strong{
     
     
 }
-.badge{
-    
-    width: 10em;
-    
-    
-    
-    
-}
+
 
 .contact-body {
     display: flex;
