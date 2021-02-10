@@ -9,8 +9,10 @@
     
 }
 
+
 body{
-    width:98vw;
+    min-width:320px;
+    
 }
 
 h1{
@@ -30,7 +32,7 @@ button{
 a{
     text-decoration: none;
     font-weight: bold;
-     margin: 0.2em 0em;
+     margin: 1em 1em;
 }
 
 em{
@@ -81,13 +83,18 @@ nav{
     
     position:sticky;
     margin: auto;
-    width: 98%;
+    min-width: 98vw;
     background-color: rgba(0,0,0,0.8);
    border: solid green 1px;
     height: auto;
     top: 0px;
     z-index: 10;
     
+}
+
+nav ul{
+    display:flex;
+    flex-direction: column;
 }
 
 main{
@@ -193,6 +200,13 @@ nav ul {
     text-align: justify;
 }
 
+#skills article a{
+    color:slateblue;
+    margin:0px;
+}
+
+
+
 #projects{
     margin-top: 0px;
     border: solid green 1px;
@@ -250,7 +264,7 @@ footer{
     color:white;
     text-align: center;
     
-    margin: 1em auto;
+    margin: 0.5em auto;
     bottom: 0px;
     width: 98vw;
     height: auto;
@@ -258,6 +272,32 @@ footer{
     width: 90%;
 
 }
+
+ footer .social-links{
+     display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+     
+    }
+
+    
+     footer .social-links a{
+         margin: 0.5em 1em;
+
+     }
+
+     footer .social-links a:hover{
+         color:#F59800;
+
+     }
+
+
+footer h6{
+    font-size: small;
+    font-weight: lighter;
+}
+
 
 
 section{
@@ -290,7 +330,7 @@ section{
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 507px) {
  nav{
      width: 100vw;
      height: 10em;
@@ -300,6 +340,7 @@ section{
     nav ul {
 
     display: flex;
+    flex-direction: row;
     
     align-items: center;
     justify-content: space-evenly;
@@ -317,27 +358,34 @@ section{
 
 @media only screen and (min-width: 800px){
 
-   
-  body{
-      height: auto;
-      
-      
-  }
-  main{
-      background-color:white;
-  }
-    header{
-    min-width: 98vw;
+
+    #contact-me ,#skills,#projects{
+    border:none;
+}
+
+   h3{
+       text-align: left;
+   }
+
+      header{
+    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     margin: auto;
 }
 
+  
+  main{
+      background-color:white;
+      width: 90%;
+      margin:auto;
+  }
+  
+ 
      #header-clip{
         display:flex;
         justify-content: center;
-        
-        width:100%; 
+       width:100%; 
     }
 
  nav > ul {
@@ -363,21 +411,9 @@ section{
      
  }
 
- footer .social-links {
-     display: flex;
-     height: 100%;
-     justify-content: center;
-     align-items: center;
-     
-     
-     }
-
-     footer .social-links a:hover{
-         color:#F59800;
-     }
 
 
- #info #aboutme ,#info .social-links {
+ #info #header-info ,#info .social-links {
 
   
     transform: skew(15deg , 0deg);
@@ -401,9 +437,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        
-    background-color: slateblue;
-    color: white;
+     
+    background-color: royalblue;
+    
     min-height: 90vh;
     margin-top: 0px;
     min-width: 70%;
@@ -419,15 +455,22 @@ section{
 
     }
 
-    #aboutme{
-        height: 8em;
+    #header-info h1{
+        
+        color:whitesmoke;
+        
     }
     #about-me > article{
     height: 50vh;
+    padding: 0em 5em;
     margin-top: 0;
     background-color: white;
     border-radius: 50px;
     color: black;
+    border: none;
+    
+
+    
 }
 
 nav{
@@ -457,7 +500,7 @@ nav{
 
     display:flex ;
     flex-direction: row;
-    
+   
 
     
 }
@@ -628,6 +671,7 @@ button{
 .contact-form img{
 
     width: 100%;
+    object-fit: cover;
     
 }
 
@@ -651,16 +695,13 @@ footer{
     
 }
 
-footer h6{
-    font-size: small;
-    font-weight: lighter;
-}
-
 
 .card-img-top-div{
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-around;
+    margin: 2em 0em;
     
 }
 
@@ -672,15 +713,21 @@ footer h6{
     
 }
 
-#project  .card-title{
+
+
+#projects  .card-title{
     font-weight: bolder;
     color: rgba(0,0,0,0.7);
     margin-bottom: 1em;
 }
-#project .card-text{
+#projects .card-text{
     text-align: justify;
     margin: 1em 0em;
+    padding: 1em;
+}
 
+#projects a{
+    margin: 0px 3px;
 }
 
 
