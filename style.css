@@ -6,27 +6,31 @@
     padding:0;
     box-sizing: border-box;
     
+    
+}
+
+body{
+    width:98vw;
+}
+
+h1{
+    color: slateblue;
+}
+h2{
+    color: #F59800;
+    
+}
+
+
+
+button{
+    text-align: center;
 }
 
 a{
     text-decoration: none;
-    font-weight: bold
-}
-
-
-main{
-    width:90%;
-    background-color:white;
-    margin: auto;
-}
-
-#about-me article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
+    font-weight: bold;
+     margin: 0.2em 0em;
 }
 
 em{
@@ -35,8 +39,82 @@ em{
     color:slateblue;
 }
 
+h3{
+    color:#F59800;
+    text-decoration: underline;
+    margin: 1em;
+    text-align: center;
+    
+}
+
+.card  {
+    width: 100%;
+    margin: auto;
+    
+
+}
+
+.accordion-body{
+    width: 100%;
+}
+
+
+/*  CSS to for header contain nav and info section  */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 98vw;
+    margin: auto;
+    /* background-image: url(); */
+   display: flex;
+   flex-direction: column;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   color: gray;
+   }
+
+nav{
+    
+    position:sticky;
+    margin: auto;
+    width: 98%;
+    background-color: rgba(0,0,0,0.8);
+   border: solid green 1px;
+    height: auto;
+    top: 0px;
+    z-index: 10;
+    
+}
+
+main{
+    width:98vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    margin: auto;
+    min-height: auto;
+}
+
+#about-me article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+    height: auto;
+    margin: auto;
+    border: solid green 1px;
+}
+
+
 #about-me{
-    height: 50vh;
+    
     margin-top: 0;
     font-size: large;
     font-weight:500;
@@ -45,60 +123,41 @@ em{
 
 }
 
-#screen{
+/* #screen{
     position: absolute;
     background-image: linear-gradient(90deg, #fddb92 0%, #d1fdff 100%);
     height: 90vh;
     opacity: 0.8;
-    width: 90vw;
+    width: 98vw;
     z-index: 1;
-}
+} */
 
  #info{
     z-index: 5;
-    margin-right: auto;
-   
-}
-nav{
-    position:sticky;
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-    height: 3em;
-    top: 0px;
-    width: 90%;
-    margin-left: auto;
-    z-index: 10;
-    
-}
-header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    width: 90vw;
-    margin: auto;
-    background-image: url();
-   display: flex;
-   flex-direction: column;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   color: gray;
    
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
    
 }
+
+
 
 nav ul {
     display: flex;
     
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
 
     
 }
 
-#aboutme {
+#header-info {
     display: flex;
     margin-top: 3em;
     flex-direction: column;
@@ -114,34 +173,70 @@ nav ul {
     
 }
 
-a{
-    margin: 0.2em 0.5em;
+#skills{
+    margin-top: 0px;
+    border: solid green 1px;
+
 }
 
 #skill-cards{
     display: flex;
     justify-content: space-evenly;
+    
     flex-direction: column;
 }
 
-.card  {
-    width: 90% !important;
-    margin: 0.5em auto;
-
+#skill-cards p{
+    margin-top: 0;
+    font-size: large;
+    font-weight:500;
+    text-align: justify;
 }
 
+#projects{
+    margin-top: 0px;
+    border: solid green 1px;
+}
 #project-cards{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-#contact-me form{
+#project-cards .card-text{
+     margin-top: 0;
+    font-size: large;
+    font-weight:500;
+    text-align: justify;
+    padding:0.2em 0.1em;
+}
+
+.panel button{
+    margin: 1em;
+}
+#contact-me{
+    
+    margin-top: 0px;
+    border:solid green 1px;
+}
+#contact-me .general-info{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 10px;
+     margin-top: 1em;
+    font-size: large;
+    font-weight:500;
+    text-align: justify;
+    
+}
+
+#contact-me img{
+    width: 100%;
+    object-fit: cover;
+
 }
 
 #description{
@@ -149,12 +244,18 @@ a{
 }
 
 footer{
-    position: relative;
-    margin-top: 2em auto;
+
+    display:flex;
+    flex-direction: column;
+    color:white;
+    text-align: center;
+    
+    margin: 1em auto;
     bottom: 0px;
-    height: 30px;
+    width: 98vw;
+    height: auto;
     background-color:rgba(0,0,0,0.8);
-   width: 90%;
+    width: 90%;
 
 }
 
@@ -163,26 +264,7 @@ section{
   margin: 3em 0.5em;
 }
 
-h1{
-    color: whitesmoke;
-}
-h2{
-    color: #F59800;
-    
-}
 
-
-h3{
-    color:#F59800;
-
-    text-decoration: underline;
-    
-    
-}
-
-button{
-    text-align: center;
-}
 
 #to-top{
 
@@ -208,15 +290,20 @@ button{
 }
 
 
-@media only screen and (max-width: 500px) {
-    nav{
-        height: auto;
-    }
+@media only screen and (min-width: 500px) {
+ nav{
+     width: 100vw;
+     height: 10em;
+
+ }
+    
     nav ul {
+
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 2em;
     list-style: none;
 
     
